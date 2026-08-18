@@ -1,0 +1,77 @@
+:root {
+  --navy: #10233f;
+  --navy-deep: #0a1729;
+  --navy-soft: #1b3358;
+  --orange: #e8722a;
+  --orange-bright: #f79038;
+  --cream: #f6efe4;
+  --cream-deep: #ece0cd;
+  --ink: #12213a;
+  --muted: #5d6b80;
+  --muted-light: #a8b6cb;
+  --line: rgba(16, 35, 63, 0.12);
+  --line-light: rgba(246, 239, 228, 0.16);
+  --gold: #d8a33c;
+
+  --script: 'Kaushan Script', 'Segoe Script', cursive;
+  --display: 'Archivo Black', 'Segoe UI', Impact, sans-serif;
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  --shell: 1140px;
+
+  font: 17px/1.6 var(--sans);
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--navy);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--orange);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 16px;
+  }
+}
